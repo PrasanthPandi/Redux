@@ -1,12 +1,13 @@
-import './App.css';
-import Product from './component/product';
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import MainLayout from "./landingpage/container/mainLayout";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Product/>
-    </div>
+    <Router>
+      <MainLayout />
+    </Router>
   );
-}
+};
 
 export default App;
